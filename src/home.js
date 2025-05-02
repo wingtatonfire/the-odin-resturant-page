@@ -34,7 +34,7 @@ export function loadHome() {
     
     content.appendChild(card);
     card.classList.add('card');
-    homeTitle.textContent = toTitleCase("A DELICIOUS FAMILY OWN PIZZERIA IN SCARBOROUGH");
+    homeTitle.textContent = toTitleCase("A DELICIOUS FAMILY OWN PIZZERIA IN FuckING SCARBOROUGH");
 
     card.appendChild(homeTitle);
 
