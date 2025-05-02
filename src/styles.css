@@ -1,8 +1,341 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
 body {
-    background-color: lightgreen;
-  }
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'Cinzel';
+    src: url('./fonts/Cinzel-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GreatVibes';
+    src: url('./fonts/GreatVibes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image: url('./images/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    font-family: Cinzel, monospace;
+}
 
 .pizza {
     width: 400px;
-    height: auto;;
+    height: auto;
+    ;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.5);
+    /* white with 50% opacity */
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    /* removes underline */
+    color: inherit;
+    font-size: 18px;
+    /* makes it inherit the parent's color */
+}
+
+.title {
+    font-family: 'greatVibes', monospace;
+    font-size: 40px;
+    color: black;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: greatVibes, monospace;
+    font-size: 30px;
+    padding: 12px;
+    margin: 12px;
+    margin-top: 36px;
+}
+
+.option:hover {
+    text-decoration: underline;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    flex: 1 0 800px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+    align-items: center;
+    padding-top: 24px;
+    width: 80%;
+    ;
+}
+
+
+.descriDiv {
+    padding: 12px;
+    display: flex;
+    margin: 12px;
+    align-items: center;
+}
+
+.homeImage {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: 12px;
+}
+
+.homeText {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.homeWordDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+    padding: 8px;
+    gap: 16px;
+    ;
+}
+
+@media (max-width: 750px) {
+    .descriDiv {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+button {
+    all: unset;
+    /* resets all inherited and default styles */
+    cursor: pointer;
+    /* re-add cursor to indicate interactivity */
+}
+
+.menuCard {
+    flex: 1 1 400px;
+}
+
+.menuContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.menuDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+    padding: 8px;
+    gap: 16px;
+    flex: 1;
+
+}
+
+.menuImage {
+    width: 100%;
+    min-width: 180px;
+    border-radius: 50%;
+    margin: 12px;
+}
+
+#content.contactContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+}
+
+.contactPhoto {
+    width: 300px;
+    border-radius: 20%;
+}
+
+.contactCard {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 450px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20%;
+}
+
+.contactCard > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.addressTitleDiv, .phoneTitleDiv {
+    justify-content: end;
+    align-items: flex-start;
+    margin-left: 22px;
+}
+.addressDiv, .phoneDiv {
+    justify-content: center;
+    align-items: center;
+}
+.contactTitle {
+    font-size: 40px;
 }
