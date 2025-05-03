@@ -34,7 +34,7 @@ export function loadHome() {
     
     content.appendChild(card);
     card.classList.add('card');
-    homeTitle.textContent = toTitleCase("A DELICIOUS FAMILY OWN PIZZERIA IN FuckING SCARBOROUGH");
+    homeTitle.textContent = toTitleCase("A DELICIOUS FAMILY OWN PIZZERIA IN SCARBOROUGH");
 
     card.appendChild(homeTitle);
 
@@ -79,7 +79,7 @@ export function loadHome() {
     homeWordDiv2.appendChild(homeSubtitle2);
     homeWordDiv2.appendChild(homeText2);
     homeSubtitle2.textContent = "The Way We Make It";
-    homeText2.textContent = 'At PizzaOnFire, we believe that pizza should be made with love and care. That\'s why we take the time to make our dough from scratch every day';
+    homeText2.textContent = 'At PizzaOnFire, we believe that pizza should be made with love. That\'s why we take the time to make our dough from scratch every day';
 
     descriDiv3.appendChild(homeImage3);
     descriDiv3.appendChild(homeWordDiv3);
